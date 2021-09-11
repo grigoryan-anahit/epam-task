@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+     constructor(name,color){
+         this.name=name;
+         this.color=color;
+     }
+     moove(speed){
+         this.speed=speed;
+         alert(`${this.name} mooves at speed of  ${speed} `)
+     }
+   }
+   class Cat extends Animal{
+        stop(){
+            alert(`${this.name} stops`)
+        }
+   }
+   let cat=new Cat('My cat','grey');
+   cat.moove(5);
+   cat.stop();
+    </script>
+</body>
+</html>
