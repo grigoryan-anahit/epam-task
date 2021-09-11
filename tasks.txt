@@ -1,0 +1,50 @@
+Module 3
+  //string + boollean
+         console.log("hello"+true);//hellotrue
+         console.log("hello"+false);//hellofalse
+  //string + number
+           console.log("hello"+11);//hello11
+           console.log("happy"+7);//happy7
+   //number + boolean
+           console.log(125+true);//123
+           console.log(23+false);//23
+
+    // string * boolean
+            console.log("hello"*true);//NaN
+            console.log("hello"*false);//NaN
+    // string * number
+            console.log("hello"*11); //NaN
+            console.log("happy"*7); //NaN
+    //number * boolean
+            console.log(125*true);//125
+            console.log(23*false); //0
+
+    // string / boolean
+            console.log("hello"/true); //NaN
+            console.log("hello"/false); //NaN
+    // string / number
+            console.log("hello"/11); //NaN
+            console.log("happy"/7); //NaN
+    //number / boolean
+           console.log(125/true);   //125
+           console.log(23/false);   //Infinity
+
+     alert(Number('12'))    //12
+     alert(Number('hello')) //NaN
+     alert(Number('hi20'))  //NaN
+     alert(Number(true))    //1
+     alert(Number(false))   //0
+
+      console.log(String('12'))    // 12
+      console.log(String(12))      //12
+      console.log(String('hello')) //hello
+      console.log(String('hi20'))  //hi20
+      console.log(String(true))    //true
+      console.log(String(false))   //false
+            
+      console.log(Boolean('12'))   //true
+      console.log(Boolean(12))     //true
+      console.log(Boolean('hello')) //true
+      console.log(Boolean('hi20')) //true
+      
+   
