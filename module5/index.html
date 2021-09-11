@@ -1,0 +1,93 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <script>
+    //1
+ const arr=['Pride & Prejudice', 'One at home', 'film','film2','film3'];
+   function films(arr){
+      arr.forEach(element => {console.log(element)});
+   }
+ films(arr);
+  console.log("           task 2")
+   //2
+ const arrCars=['BMW',"Mercedes","Suzuki","Toyota","Bently"];
+ const arrString=arrCars.toString();
+ console.log(arrString);
+ const arrSplit=arrString.split(',');
+ console.log(arrSplit)
+ console.log("           task 3")
+   //3  
+ const names=['Ani','Aram','Narek','Nazeni','Anahit'];
+  let str='Hello';
+  let result=[];
+       for(let i=0;i<names.length;i++){
+            let n=str+' '+names[i];
+            result.push(n);
+       }
+  console.log(result)
+  console.log("           task 4")
+   //4
+ const nums=[1,2,8,6,3,0,4,0,78,0];
+ let numsBool=[];
+    for(let i=0;i<nums.length;i++){
+        numsBool.push(Boolean(nums[i]))
+     }
+   console.log(numsBool);
+   console.log("           task 5")
+   // 5
+ const toSort=[1,6,7,8,3,4,5,6] ;
+  console.log(toSort.sort((a,b)=>b-a));
+  console.log("           task 6")
+   //6
+ const toFilter=[1,6,7,8,3,4,5,6];
+ console.log(toFilter.filter(item=>item>3));
+ console.log("           task 7")
+   //7
+  function findByIndex(arr,n){
+      console.log(arr.findIndex(item=>item===n));
+  }
+  findByIndex(toFilter,4);
+  console.log("           task 8")
+  ///8 
+  let a=15;
+  while(a>=10){
+      console.log(a);
+      a--;
+  }
+  //9
+  console.log("           task 9")
+  function isSimple(n){
+      let res;
+      for(let i=2;i<n;i++){
+        if(n%i===0){
+        res=false;
+        break;
+      }
+      else res=true;
+      }
+     
+      return res;
+  }
+  const numbers=[4,5,8,2,7,13,15,21,27];
+  for(let i=0;i<numbers.length;i++){
+       if(isSimple(numbers[i])){
+           console.log(numbers[i])
+       }
+  }
+  //10
+  console.log("           task 10")
+  for(let i=0;i<numbers.length;i++){
+      if(numbers[i]%2!==0){
+          console.log(numbers[i])
+      }
+  }
+  </script>
+  </body>
+ </html>
