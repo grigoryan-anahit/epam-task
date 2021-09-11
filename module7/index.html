@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let strOne= 'ahb acb aeb aeeb adcb axeb';
+        let r=/a[\w+]*b/g;
+        console.log(strOne.match(r))
+   //2
+    let string='2+3 563 879';
+    let res=string.split(' ');
+    console.log(res[0])
+    //3
+    let date=new Date();
+    const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+    console.log(`Today is ${date.getDate()} of ${date.getMonth()+1}-th month, ${date.getFullYear()} `);
+    console.log(days[date.getDay()]);
+    console.log(`The hour is ${date.getHours()} : ${date.getMinutes()}`)
+    </script>
+</body>
+</html>
